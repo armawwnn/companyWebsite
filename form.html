@@ -160,56 +160,48 @@
             </div>
         </div>
     </div>
-<div class="container my-4"  id="lang">
+<div class="container my-4">
     <h4 class="h4 dark-grey-text mt-5 mb-4 text-center">کدام یک از زبان های زیر را میدانید</h4>
-<div class="row">
-    <section class="col">
+<div class="row" id="lang" >
+    <div class="col">
 
-        <div class="form-check checkbox-rounded checkbox-living-coral-filled mb-2">
-            <input type="checkbox" class="form-check-input filled-in" id="none">
-            <label class="form-check-label" for="roundedExample2" id="none">هیچکدام</label>
+        <div class="form-check checkbox-rounded checkbox-living-coral-filled mb-2"  >
+            <input type="checkbox" class="form-check-input filled-in"  >
+            <label class="form-check-label" for="roundedExample2" >هیچکدام</label>
         </div>
 
-        <div class="form-check checkbox-rounded checkbox-cerulean-blue-filled">
-            <input type="checkbox" class="form-check-input filled-in" id="en">
+        <div class="form-check checkbox-rounded checkbox-cerulean-blue-filled" value="en"  >
+            <input type="checkbox" class="form-check-input filled-in">
             <label class="form-check-label" for="roundedExample3">انگلیسی</label>
         </div>
 
-    </section>
-    <section class="col">
+    </div>
+    <div class="col">
 
-        <div class="form-check checkbox-rounded checkbox-living-coral-filled mb-2">
-            <input type="checkbox" class="form-check-input filled-in" id="ge">
+        <div class="form-check checkbox-rounded checkbox-living-coral-filled mb-2" id="ge">
+            <input type="checkbox" class="form-check-input filled-in" >
             <label class="form-check-label" for="roundedExample2">المانی</label>
         </div>
-        <div class="form-check checkbox-rounded checkbox-cerulean-blue-filled">
-            <input type="checkbox" class="form-check-input filled-in" id="fr">
+        <div class="form-check checkbox-rounded checkbox-cerulean-blue-filled" id="fr">
+            <input type="checkbox" class="form-check-input filled-in" >
             <label class="form-check-label" for="roundedExample3">فرانسوی</label>
         </div>
 
-    </section>
-    <section class="col">
+    </div>
+    <div class="col">
 
-        <div class="form-check checkbox-rounded checkbox-living-coral-filled mb-2">
-            <input type="checkbox" class="form-check-input filled-in" id="ar">
+        <div class="form-check checkbox-rounded checkbox-living-coral-filled mb-2" id="ar">
+            <input type="checkbox" class="form-check-input filled-in" >
             <label class="form-check-label" for="roundedExample2">عربی</label>
         </div>
-        <div class="form-check checkbox-rounded checkbox-cerulean-blue-filled">
-            <input type="checkbox" class="form-check-input filled-in" id="other">
+        <div class="form-check checkbox-rounded checkbox-cerulean-blue-filled" id="other">
+            <input type="checkbox" class="form-check-input filled-in" >
             <label class="form-check-label" for="roundedExample3">زبان های دیگر</label>
         </div>
-    </section>
+    </div>
 
 </div>
 </div>
-    <div class="form-group" id="ability">
-        <lable for="ability">میزان تسلط</lable>
-        <select name="ability" id="ability" class="form-control mb-2 mr-sm-2">
-            <option value="a1"> ضعیف </option>
-            <option value="a2">متوسط</option>
-            <option value="a3">عالی</option>
-        </select>
-    </div>
     <button type="submit" class="btn btn-primary btn-block mb-2">Submit</button>
 </form>
 </div>
@@ -255,7 +247,7 @@
 <script src="dist/bootstrap/js/jquery-3.5.1.slim.min.js"></script>
 <script src="dist/bootstrap/js/popper.min.js"></script>
 <script src="dist/bootstrap/js/bootstrap.min.js"></script>
-<!--js for number input -->
+<!-- js for number input -->
 <script src="dist/bootstrap/js/customJS/FormCustomJs.js">
 </script>
 </body>

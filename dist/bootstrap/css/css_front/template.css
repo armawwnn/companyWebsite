@@ -4,6 +4,16 @@ html , body{
     /*font-family: ;*/
     color: #222222;
 }
+@font-face {
+    font-family: "IRANsans";
+    src: url("../../../fonts/IRAN.eot");
+    src: url("../../../fonts/IRAN.ttf");
+    src: url("../../../fonts/IRAN.woff");
+    src: url("../../../fonts/IRAN.woff2");
+}
+.body{
+    font-family: "IRANsans";
+}
 .navbar{
     padding: .8rem !important;
 }
