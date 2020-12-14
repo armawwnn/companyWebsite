@@ -44,11 +44,12 @@
     </div>
 </nav>
 <!--end menu-->
-<form action="" class="main-form">
+<div class="container" >
+<form action="" class="col-12">
     <div class="row">
         <div class="col">
             <div class="form-group">
-                <lable for="name">نام</lable>
+                <lable for="name"class="text-center">نام</lable>
                 <input type="text" name="name" id="name" class="form-control mb-2 mr-sm-2">
             </div>
         </div>
@@ -59,56 +60,110 @@
             </div>
         </div>
     </div>
-    <div class="form-group">
-        <lable for="gender">جنسیت</lable>
-        <select name="gender" id="gender" class="form-control mb-2 mr-sm-2">
-            <option value="male"> مرد </option>
-            <option value="female"> زن </option>
-        </select>
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <lable for="gender">جنسیت</lable>
+                <select name="gender" id="gender" class="form-control mb-2 mr-sm-2">
+                    <option value="male"> مرد </option>
+                    <option value="female"> زن </option>
+                </select>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <lable for="age">سن</lable>
+                <input type="text" id="age" name="age" class="form-control mb-2 mr-sm-2" onkeypress="return isNumber(event)" onpaste="return false;"/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="form-group ">
+                <lable for="mobileNum" >شماره تماس (موبایل)</lable>
+                <input type="text" id="mobileNum" class="form-control mb-2 mr-sm-2" onkeypress="return isNumber(event)" onpaste="return false;">
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <lable for="codeMeli">کد ملی</lable>
+                <input type="text" id="codeMeli" class="form-control mb-2 mr-sm-2" onkeypress="return isNumber(event)" onpaste="return false;">
+            </div>
+        </div>
     </div>
     <div class="form-group">
-        <lable for="mobileNum">شماره تماس (موبایل)</lable>
-        <input type="text" id="mobileNum" class="form-control mb-2 mr-sm-2" onkeypress="return isNumber(event)" onpaste="return false;">
-    </div>
-    <div class="form-group">
-        <lable for="codeMeli">کد ملی</lable>
-        <input type="text" id="codeMeli" class="form-control mb-2 mr-sm-2" onkeypress="return isNumber(event)" onpaste="return false;">
+        <lable for="email">ایمیل</lable>
+        <input type="text" id="email" class="form-control mb-2 mr-sm-2">
     </div>
     <div class="form-group">
         <lable for="adress">آدرس</lable>
         <textarea class="form-control" id="adress" rows="3" style="resize: none"></textarea>
     </div>
-    <div class="form-group">
-        <lable for="maritalStatus">وضعیت تاهل</lable>
-        <select name="maritalStatus" id="maritalStatus" class="form-control mb-2 mr-sm-2">
-            <option value="Single"> مجرد </option>
-            <option value="Married"> متاهل </option>
-        </select>
+    <div class="row">
+        <div class="col">
+            <div class="form-group" id="maritalStatus">
+                <lable for="maritalStatus">وضعیت تاهل</lable>
+                <select name="maritalStatus" id="maritalStatus" class="form-control mb-2 mr-sm-2">
+                    <option name="maritalStatus" value="Married"> متاهل </option>
+                    <option name="maritalStatus" value="Single"> مجرد </option>
+                </select>
+            </div>
+        </div>
+        <div class="col" id="ageP">
+            <div >
+                <div class="form-group">
+                    <lable for="ageP">سن همسر</lable>
+                    <input type="text" id="ageP"  class="form-control mb-2 mr-sm-2" onkeypress="return isNumber(event)" onpaste="return false;">
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="form-group">
-        <lable for="age">سن</lable>
-        <input type="text" id="age" name="age" class="form-control mb-2 mr-sm-2" onkeypress="return isNumber(event)" onpaste="return false;"/>
+<div id="marridP">
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <lable for="educationP">آخرین مدرک تحصیلی همسر</lable>
+                <select name="educationP" id="educationP" class="form-control mb-2 mr-sm-2">
+                    <option value="e1"> دیپلم </option>
+                    <option value="e2">فوق دیپلم</option>
+                    <option value="e3">لیسانس</option>
+                    <option value="e4">فوق لیسانس</option>
+                    <option value="e5">دکتری</option>
+                </select>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <lable for="reshteP">رشته تحصیلی همسر</lable>
+                <input type="text" id="reshteP" class="form-control mb-2 mr-sm-2">
+            </div>
+        </div>
     </div>
-    <div class="form-group">
-        <lable for="education">آخرین مدرک تحصیلی</lable>
-        <select name="education" id="education" class="form-control mb-2 mr-sm-2">
-            <option value="Single"> دیپلم </option>
-            <option value="Married">فوق دیپلم</option>
-            <option value="Married">لیسانس</option>
-            <option value="Married">فوق لیسانس</option>
-            <option value="Married">دکتری</option>
-        </select>
+</div>
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <lable for="education">آخرین مدرک تحصیلی</lable>
+                <select name="education" id="education" class="form-control mb-2 mr-sm-2">
+                    <option value="e1"> دیپلم </option>
+                    <option value="e2">فوق دیپلم</option>
+                    <option value="e3">لیسانس</option>
+                    <option value="e4">فوق لیسانس</option>
+                    <option value="e5">دکتری</option>
+                </select>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <lable for="reshte">رشته تحصیلی</lable>
+                <input type="text" id="reshte" class="form-control mb-2 mr-sm-2">
+            </div>
+        </div>
     </div>
-    <div class="form-group">
-        <lable for="reshte">رشته تحصیلی</lable>
-        <input type="text" id="reshte" class="form-control mb-2 mr-sm-2">
-    </div>
-<!--    <div class="form-check">-->
-<!--    <input type="checkbox" id="accept-terms" class="form-check-input mb-2 mr-sm-2">-->
-<!--    <lable for="accept-terms" class="form-check-label">Accept Terms</lable>-->
-<!--    </div>-->
+
     <button type="submit" class="btn btn-primary mb-2">Submit</button>
 </form>
+</div>
 <!--footer-->
 <footer>
     <div class="container-fluid padding">
@@ -152,15 +207,7 @@
 <script src="dist/bootstrap/js/popper.min.js"></script>
 <script src="dist/bootstrap/js/bootstrap.min.js"></script>
 <!--js for number input -->
-<script type="text/javascript">
-    function isNumber(evt) {
-        evt = (evt) ? evt : window.event;
-        var charCode = (evt.which) ? evt.which : evt.keyCode;
-        if ( (charCode > 31 && charCode < 48) || charCode > 57) {
-            return false;
-        }
-        return true;
-    }
+<script src="dist/bootstrap/js/customJS/FormCustomJs.js">
 </script>
 </body>
 </html>
