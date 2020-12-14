@@ -8,7 +8,7 @@ function isNumber(evt) {
     return true;
 }
 // end function just number
-// conditional
+// conditional----1
 $(function(){
     $("body").on("click", "#maritalStatus [id]", function(){
         var $this = $(this),
@@ -20,4 +20,17 @@ $(function(){
         }
     });
 });
-// conditional
+// conditional----1
+// conditional----2
+$(function(){
+    $("body").on("click", "#lang [id]", function(){
+        var $this = $(this),
+            thisSelectedValue = $this.val();
+        if (thisSelectedValue == 'none' ){
+            $("#ability").hide();
+        }else {
+            $("#ability").show();
+        }
+    });
+});
+// conditional----2
