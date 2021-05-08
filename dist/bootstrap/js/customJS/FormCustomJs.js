@@ -45,3 +45,21 @@ else
 
 // code meli
 
+//desplay none
+
+
+function displaynone() {
+    let e = document.getElementById('maritalStatusS');
+    console.log(e.value);
+    if(e.value == 'Single'){
+     document.getElementById("ageP").style.display = "none";
+     document.getElementById("marridP").style.display = "none";
+    }else{
+        document.getElementById("ageP").style.display = "";
+        document.getElementById("marridP").style.display = "";
+    }
+
+  }
+
+//
+
