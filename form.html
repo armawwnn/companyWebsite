@@ -45,7 +45,7 @@
 </nav>
 <!--end menu-->
 <div class="container" >
-<form action="" class="col-12">
+<form action="" class="col-12" >
     <div class="row">
         <div class="col">
             <div class="form-group">
@@ -73,7 +73,8 @@
         <div class="col">
             <div class="form-group">
                 <lable for="age">سن</lable>
-                <input type="text" id="age" name="age" class="form-control mb-2 mr-sm-2" onkeypress="return isNumber(event)" onpaste="return false;"/>
+                <input type="text" id="age" name="age" class="form-control mb-2 mr-sm-2" onkeypress="return isNumber(event)" "/>
+                <small class="form-text text-muted">برای وارد کردن سن لطفا کیبورد خود را انگلیسی کتید</small>
             </div>
         </div>
     </div>
@@ -81,13 +82,14 @@
         <div class="col">
             <div class="form-group ">
                 <lable for="mobileNum" >شماره تماس (موبایل)</lable>
-                <input type="text" id="mobileNum" class="form-control mb-2 mr-sm-2" onkeypress="return isNumber(event)" onpaste="return false;">
+                <input type="text" id="mobileNum" class="form-control mb-2 mr-sm-2" onkeypress="return isNumber(event)" ">
             </div>
         </div>
         <div class="col">
             <div class="form-group">
-                <lable for="codeMeli">کد ملی</lable>
-                <input type="text" id="codeMeli" class="form-control mb-2 mr-sm-2" onkeypress="return isNumber(event)" onpaste="return false;">
+                <lable for="codeMeli">کد ملی</lable> 
+                <input type="text" id="codeMeli" class="form-control mb-2 mr-sm-2" onkeypress="return isNumber(event) " onchange="checkMelliCode()" >
+                <div class="text-danger" id="valcode-meli"> </div>
             </div>
         </div>
     </div>
@@ -202,7 +204,7 @@
 
 </div>
 </div>
-    <button type="submit" class="btn btn-primary btn-block mb-2">Submit</button>
+    <button type="submit" class="btn btn-primary btn-block mb-2" " >ثبت</button>
 </form>
 </div>
 <!--footer-->
