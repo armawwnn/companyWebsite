@@ -40,7 +40,6 @@ else
 }else{
     document.getElementById("valcode-meli").innerHTML = "کد ملی نادرست میباشد";
 }
-
 } 
 
 // code meli
@@ -62,4 +61,8 @@ function displaynone() {
   }
 
 //
+//history back
 
+console.log(history.value)
+
+//
